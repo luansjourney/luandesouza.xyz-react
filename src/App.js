@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+//#region components-layout-pages imports
+import Layout from "./Layouts/Layout";
+import Home from "./Pages/Home";
+import PageCTA from "./Pages/PageCTA";
+import PageOne from "./Pages/PageOne";
+//#endregion
+//#region library imports
+import { Routes , Route} from "react-router-dom";
+//#endregion
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+      <Layout>
+        <Routes>
+          <Route path="/" exact element={<Home />}>
+          </Route>
+          <Route path="/page-one" element={<PageOne />}>
+          </Route>
+          <Route path="/page-cta" element={<PageCTA />}>
+          </Route>
+        </Routes>
+    </Layout>
   );
 }
 
