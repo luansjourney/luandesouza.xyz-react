@@ -2,7 +2,7 @@ import React from 'react'
 
 function PageOne() {
   return (
-    <h1>PageOne</h1>
+    <h1 className='h1'>PageOne</h1>
   )
 }
 

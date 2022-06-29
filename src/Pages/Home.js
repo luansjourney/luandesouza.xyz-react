@@ -1,8 +1,12 @@
-import React from 'react'
+//#region components import
+import Hero from '../Components/Hero'
+//#endregion
 
 function Home() {
   return (
-    <h1>Home</h1>
+    <>
+      <Hero />
+    </>
   )
 }
 
