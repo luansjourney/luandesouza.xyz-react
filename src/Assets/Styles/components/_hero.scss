@@ -1,6 +1,17 @@
-.container {
+.hero-container {
+    display: flex;
     flex-direction: row;
-    
+    height: 100vh;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        padding-bottom: 40%;
+    }
 }
 
 h1 {
@@ -20,26 +31,28 @@ p {
     }
 }
 
-#info {
+
+#img {
+    padding-left: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-}
-
-#img {
-    padding-left: 1.5rem;
-    display: flex;
-    justify-content:center ;
+    @media (max-width: 768px) {
+        padding-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 40%;
+    }
 }
 
 
 img {
     width: 500px;
     height: 500px;  
-
+    
     @media (max-width: 768px){
+        
         width: 150px;
         height: 150px;
     }
