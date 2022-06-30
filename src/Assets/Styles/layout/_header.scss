@@ -1,4 +1,7 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 101;
     background: $dark;
     width: 100%;
     height: $headerHeight;
@@ -34,11 +37,11 @@
         }
 
         &__nav {
+            position: fixed;
             top: 0;
             right: 100%;
             bottom: 0;
             width: 100%;
-            position: fixed;
             display: flex;
             flex-direction: column;
             justify-content: center;
