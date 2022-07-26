@@ -38,7 +38,7 @@ export const ModalBody = props => {
 }
 
 export const ModalFooter = props => {
-    return <div className="modal__footer">
+    return <div className="modal__footer" >
         {props.children}
     </div>
 }

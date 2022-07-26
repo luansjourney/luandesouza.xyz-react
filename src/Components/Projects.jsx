@@ -12,12 +12,13 @@ function Projects() {
       <h1>Portfolio</h1>
       <div className='container'>
         <Card image={hpeSite} title="Hewlett Packard Enterprise website" 
-        modalTitle="Hewlett Packard Enterprise website" modalDescription="This was a project for a agency where I worked using Next.js, React.js, StyledComponents and SASS. We the frontend team had the task to move the html/css static site to a server side rendering project with Next.js"/>
-        <Card image={sushiLoujo} title="Sushi Shop Website" />
+        modalTitle="Hewlett Packard Enterprise website" 
+        modalDescription="This was a project for an agency 'Insite Latin America' where I worked using: NextJS, ReactJS, StyledComponents and SASS. In the frontend team we had the task to move the html/css static site to a server side rendering project with NextJS. We as a team redesigned all the sections from the main website and all the sections in the site from plain html/css to React components"
+         />
+        <Card image={sushiLoujo} title="Sushi Shop Website"/>
         <Card image={personalWeb} title="Previous Website" />
         <Card image={logo} title="Logo" />
-        <Card image={logo} title="Logo" />
-        <Card image={logo} title="Logo" />
+        <Card image={logo} title="Logo"/>
       </div>
     </div>
   )
