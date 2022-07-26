@@ -1,5 +1,5 @@
 .container {
-    min-height: calc(100vh - $headerHeight);
+    min-height: calc(100% - $headerHeight);
     background: $bg;
     display: flex;
     flex-direction: column;
