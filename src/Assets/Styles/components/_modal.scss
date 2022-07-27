@@ -1,107 +1,165 @@
 
 .modal {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
+
     position: fixed;
     z-index: 102;
-    margin: auto 0;
-    text-align: center;
-    top: 15%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     width: 75%;
     height: 75%;
     background-color: rgba($color: $dark, $alpha: 1);
     transition: 0.3s ease-in-out;
 
-    
-
-  @media (max-width:768px) {
-    width: 80%;
-    height: 65%;
-  }
-
-  @media (max-width:520px) {
-    top: 25%;
-    width: 80%;
-    height: 70%;
-  }
-
-    &.active {
-    opacity: 1;
-    visibility: visible;
-    display: block;
+    @media (max-width: 520px) {
+        width: 90%;
+        height: 70%;
     }
 
-    
+    @media (max-width: 420px) {
+        width: 95%;
+        top: 60%;
+    }
 
     &__content {
         width: 100%;
         height: 100%;
-        margin: auto 0;
+        transform: translateY(0);
+        transition: inherit;
+        padding: 50px;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 1px;
-        transition: inherit;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-100px);
+        justify-content: space-around;
+        align-items: center;
+
+        
+
+        @media (max-width: 420px) {
+            padding: 10px;
+        }
 
         .modalImage {
             position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
             width: 100%;
             height: 100%;
-            opacity: 0.5;
+            opacity:0.1;
         }
   
     }
 
-    &.active &__content {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
 
-    &__header,
+    &__header, 
     &__body,
     &__footer {
         position: relative;
-        color: $light;
-        padding: 15px 20px;
-        opacity: 1;
+        z-index: 2;
     }
 
+
     &__header {
-        z-index: 2;
-        top: 50px;
+        color: $light;
+        padding: 10px;
+        font-size: 2.5rem;
+        
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 520px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 400px) {
+            padding: 5px;
+            font-size: 0.85rem;
+        }
     }
 
     &__body {
-        z-index: 5;
-        top: 150px;
-        text-align: center;
-
+        padding: 10px;
         p {
-            font-size: 1.5em;
+            font-size: 2rem;
             font-weight: bold;
-            color: $dark;
+            color: $light;
             padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 520px) {
+            p {
+                padding: 5px;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        @media (max-width: 400px) {
+            p {
+                padding: 5px;
+                font-size: 0.80rem;
+                font-weight: 400;
+            }
         }
     }
 
     &__footer {
-        z-index: 5;
-        top: 250px;
         display: flex;
         justify-content: center;
-        margin: 0 auto;
+        padding: 10px;
 
         img {
-            padding: 15px;
+            padding: 5px;
             margin: 0 15px;
             width: 100px;
             height: 100px;
+            background-color: $light;
+
+            &:hover {
+                border: 5px $primary solid;
+                border-radius: 20px;
+                transition: 0.35s ease;
+            }
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            img {
+                width: 50px;
+                height: 50px;
+
+                &:hover {
+                    border: 2px $primary solid;
+                    border-radius: 10px;
+                    transition: 0.35s ease;
+                }
+            }
+        }
+
+        @media (max-width: 400px) {
+            img {
+                width: 35px;
+                height: 35px;
+
+                &:hover {
+                    border: 2px $primary solid;
+                    border-radius: 5px;
+                    transition: 0.35s ease;
+                }
+            }
         }
     }
 
@@ -111,8 +169,16 @@
         top: 16px;
         right: 20px;
         cursor: pointer;
+
+        @media (max-width: 520px) {
+           
+            top: 10px;
+            right: 5px;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
     }
-
-    
-
 }

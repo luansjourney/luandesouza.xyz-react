@@ -1,13 +1,15 @@
-import React from 'react'
 
 import Button from './atoms/Button';
 import closeIcon from '../Assets/Images/icons8-close.svg';
 
 
 function Modal(props) {
+
+    
+    if (!props.show) return null
    
   return (
-    <div className={`modal ${props.show ? 'active' : ''}`} >
+    <div  className="modal"  >
         <div className="modal__content" >
         {
             !props.hideCloseButton && 
@@ -17,7 +19,7 @@ function Modal(props) {
             </Button>
         }
             {props.children}
-            <img className='modalImage' src={props.image} alt="modal background" /> 
+            <img   className='modalImage' src={props.image} alt="modal background" /> 
         </div>
     </div>
   )

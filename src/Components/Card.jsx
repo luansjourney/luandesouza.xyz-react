@@ -4,7 +4,7 @@ import Modal, { ModalBody, ModalFooter, ModalHeader } from './Modal';
 
 
 //importing images
-import eyeIcon from '../Assets/Images/eye-solid.svg';
+import expandIcon from '../Assets/Images/expand-arrow-svgrepo-com.svg';
 import githubIcon from '../Assets/Images/github.png';
 import webIcon from '../Assets/Images/internet-icon.png';
 
@@ -17,7 +17,7 @@ function Card(props) {
   const textIteration = (text) => {
     let paragraph = text.split(".");
    
-    return  paragraph.map((item) => <p>{item}</p>)
+    return  paragraph.map((item) => <p>{item.concat(".")}</p>)
   }
 
   return (
@@ -26,7 +26,7 @@ function Card(props) {
           <img src={props.image} alt="logo" />
           <h3>{props.title}</h3>
           <Button className="icon-btn" onClick={ () => setShowModal(true)}>
-            <img src={eyeIcon} alt="eye icon" />
+            <img src={expandIcon} alt="eye icon" />
           </Button>
       </div>
       <Modal show={showModal} setShow={setShowModal}  image={props.image}>
