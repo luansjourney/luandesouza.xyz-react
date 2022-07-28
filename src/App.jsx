@@ -1,7 +1,7 @@
 //#region components-layout-pages imports
 import Layout from "./Layouts/Layout";
 import Home from "./Pages/Home";
-import PageCTA from "./Pages/PageCTA";
+import Contact from "./Pages/Contact";
 import PageOne from "./Pages/PageOne";
 //#endregion
 //#region library imports
@@ -16,7 +16,7 @@ function App() {
           </Route>
           <Route path="/page-one" element={<PageOne />}>
           </Route>
-          <Route path="/page-cta" element={<PageCTA />}>
+          <Route path="/contact" element={<Contact />}>
           </Route>
         </Routes>
     </Layout>

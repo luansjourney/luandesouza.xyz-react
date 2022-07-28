@@ -38,8 +38,8 @@ function Card(props) {
           : <p> Blank </p>}
         </ModalBody>
         <ModalFooter>
-          <a href='https://google.com' rel='noreferrer' target="_blank" onClick={ () => setShowModal(false)} ><img src={webIcon} alt="website icon link" /></a>
-          <a href='https://github.com'  rel='noreferrer'  target="_blank"  onClick={ () => setShowModal(false)} ><img src={githubIcon} alt="github icon link" /></a>
+          <a href='https://google.com' rel='noreferrer noopener' target="_blank" onClick={ () => setShowModal(false)} ><img src={webIcon} alt="website icon link" /></a>
+          <a href='https://github.com'  rel='noreferrer noopener'  target="_blank"  onClick={ () => setShowModal(false)} ><img src={githubIcon} alt="github icon link" /></a>
         </ModalFooter>
       </Modal>
     </>

@@ -8,6 +8,7 @@ function Layout({children}) {
         <main className='container'>
             {children}
         </main>
+        <Footer />
     </>
   )
 }
