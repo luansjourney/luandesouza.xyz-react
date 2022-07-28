@@ -1,4 +1,7 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+
+import cvImg from "../Assets/Images/icons8-download-resume-80.png";
+import pdf from '../Assets/resume.pdf';
 
 function Navbar(props) {
   const navigate = useNavigate();
@@ -12,16 +15,10 @@ function Navbar(props) {
     <nav className={`${props.cname}`}>
         <ul>
           <li>
-            <Link to='/page-one' onClick={props.menutoggle}>Page one</Link>
-          </li>
-          <li>
-            <Link to='/pagetwo'  onClick={props.menutoggle}>Page two</Link>
-          </li>
-          <li>
-            <Link to='/pagethree'  onClick={props.menutoggle}>Page three</Link>
+            <a className="resume" href={pdf} rel="noreferrer" target="_blank" onClick={props.menutoggle}><img src={cvImg} alt="resume logo"/></a>
           </li>
         </ul>
-        <button onClick={ctaClickHandler}>CTA Page</button>
+        <button onClick={ctaClickHandler}>Contact</button>
     </nav>
   )
 }
