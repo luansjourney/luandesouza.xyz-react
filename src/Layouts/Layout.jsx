@@ -5,10 +5,9 @@ function Layout({children}) {
   return (
     <>
         <Header />
-        <div className='container'>
+        <main className='container'>
             {children}
-        </div>
-        
+        </main>
     </>
   )
 }

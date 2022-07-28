@@ -1,0 +1,90 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    background-color: $dark;
+    color: $light;
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 25px;
+
+        @media (max-width:768px) {
+            font-size: 1.75rem;
+            padding-top: 17.5px;
+        }
+
+        @media (max-width:520px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .content {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 25px;
+
+        @media (max-width:768px) {
+            padding: 50px;
+        }
+
+        @media (max-width:520px) {
+            padding: 5px;
+        }
+
+        .languages-container, .framework-container,
+        .ft-container, .ot-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+           
+            h3 {
+                font-size: 1.5rem;
+                padding: 10px;
+
+                @media (max-width:768px) {
+                    font-size: 1.25rem;
+                }
+
+                @media (max-width:520px) {
+                    padding: 5px;
+                    font-size: 0.9rem;
+                }
+            }
+
+        }
+            
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media (max-width:420px) {
+                padding: 0px;
+            }
+            
+            li {
+                list-style: none;
+                padding: 15px;
+
+                @media (max-width:768px) {
+                    padding: 10px;
+                }
+
+                @media (max-width:520px) {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

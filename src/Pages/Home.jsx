@@ -1,6 +1,7 @@
 //#region components import
 import Hero from '../Components/Hero'
 import Projects from '../Components/Projects'
+import Skills from '../Components/Skills'
 //#endregion
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <>
       <Hero />
       <Projects />
+      <Skills />
     </>
   )
 }

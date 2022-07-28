@@ -26,7 +26,7 @@ function Card(props) {
           <img src={props.image} alt="logo" />
           <h3>{props.title}</h3>
           <Button className="icon-btn" onClick={ () => setShowModal(true)}>
-            <img src={expandIcon} alt="eye icon" />
+            <img src={expandIcon} alt="expand icon" />
           </Button>
       </div>
       <Modal show={showModal} setShow={setShowModal}  image={props.image}>
