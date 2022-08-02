@@ -56,7 +56,7 @@ function Skills() {
               <li><TechBox image={bsImg} imageAlt="Bootstrap logo" title="Bootstrap"/></li>
               <li><TechBox image={grommetImg} imageAlt="Grommet logo" title="Grommet"/></li>
               <li><TechBox image={styledComponentImg} imageAlt="Styled Components logo" title="Styled Components"/></li>
-              <li><TechBox image={adobeImg} imageAlt="Adobe logo" title="Adobe Package"/></li>
+              <li><TechBox image={adobeImg} imageAlt="Adobe logo" title="Adobe Suite"/></li>
             </ul>
           </div>
           <div className='ot-container'>
@@ -64,7 +64,7 @@ function Skills() {
             <ul>
             <li><TechBox image={gitImg} imageAlt="Git logo" title="Git"/></li>
             <li><TechBox image={githubImg} imageAlt="Github logo" title="Github"/></li>
-            <li><TechBox image={sqlServerImg} imageAlt="Microsoft SQL Server logo" title="Microsoft SQL Server"/></li>
+            <li><TechBox image={sqlServerImg} imageAlt="Microsoft SQL Server logo" title="MS SQL Server"/></li>
             <li><TechBox image={mongodbImg} imageAlt="MongoDB logo" title="MongoDB"/></li>
             <li><TechBox image={mysqlImg} imageAlt="mySQL logo" title="mySQL"/></li>
             <li><TechBox image={postgreeImg} imageAlt="PostgreeSQL logo" title="PostgreeSQL"/></li>

@@ -8,14 +8,14 @@ function Navbar(props) {
 
   const ctaClickHandler = () => {
     props.menutoggle()
-    navigate("/page-cta");
+    navigate("/contact");
   }
 
   return (
     <nav className={`${props.cname}`}>
         <ul>
           <li>
-            <a className="resume" href={pdf} rel="noreferrer" target="_blank" onClick={props.menutoggle}><img src={cvImg} alt="resume logo"/></a>
+            <a className="resume" href={pdf} rel="noreferrer" target="_blank" onClick={props.menutoggle} ><img src={cvImg} alt="resume logo"/></a>
           </li>
         </ul>
         <button onClick={ctaClickHandler}>Contact</button>

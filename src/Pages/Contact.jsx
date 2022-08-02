@@ -1,7 +1,10 @@
+import Form from "../Components/Form";
 
 function Contact() {
+
+
   return (
-    <h1 className='h1'>Contact</h1>
+      <Form />
   )
 }
 

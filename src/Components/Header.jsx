@@ -15,7 +15,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: undefined,
-    heigth: undefined,
+    height: undefined,
   });
 
   useEffect(() => {
@@ -37,16 +37,18 @@ function Header() {
 
   },[size.width, menuOpen]);
 
-  const menuToggleHandler = () => {setMenuOpen((p) => !p)};
+  const menuToggleHandler = () => {
+    setMenuOpen((p) => !p)
+  };
 
   return (
     <header className='header'>
       <div className='header__content'>
         <Link to="/" className="header__content__logo"><img src={logo} alt="logo" /></Link>
       
-        <Navbar cname={`${'header__content__nav'} ${menuOpen ? 'isMenu' : ""}`} menutoggle={menuToggleHandler}/>
+        <Navbar cname={`${'header__content__nav'} ${menuOpen && size.width < 768 ? 'isMenu' : ''}`} menutoggle={menuToggleHandler}/>
         <div className='header__content__toggle'>
-          {menuOpen ? <AiOutlineClose  onClick={menuToggleHandler}/> : <BiMenuAltRight onClick={menuToggleHandler} />}
+          {!menuOpen ? (<BiMenuAltRight onClick={menuToggleHandler} /> ) : ( <AiOutlineClose onClick={menuToggleHandler} />)}
         </div>
       </div>
     </header>
