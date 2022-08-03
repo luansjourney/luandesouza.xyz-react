@@ -2,7 +2,6 @@ import React from 'react'
 import Card from './Card'
 
 
-import logo from '../Assets/Images/logo.png';
 import hpeSite from '../Assets/Images/hpe-site.png';
 import sushiLoujo from '../Assets/Images/sushiloujo-site.png';
 import personalWeb from '../Assets/Images/personal-website.png';
