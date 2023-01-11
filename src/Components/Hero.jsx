@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero-container">
         <div id="DescBox">
           <h1>Hi</h1>
-          <p>I'm Luan, <br/>Web Developer</p>
+          <p>I'm Luan, <br/>Software Developer</p>
           <button className="contactBtn"><Link to="/contact">Contact me</Link></button>
         </div>
         <div id="ImgBox"><img src={heroImg} alt="bitmoji-laptop-wave"/></div>

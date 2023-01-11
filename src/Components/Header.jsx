@@ -13,6 +13,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuToggleHandler = () => {
+    setMenuOpen((p) => !p)
+  };
+
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
@@ -37,9 +41,7 @@ function Header() {
 
   },[size.width, menuOpen]);
 
-  const menuToggleHandler = () => {
-    setMenuOpen((p) => !p)
-  };
+
 
   return (
     <header className='header'>
