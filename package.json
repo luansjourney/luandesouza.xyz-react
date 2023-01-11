@@ -1,8 +1,8 @@
 {
   "name": "personal-web",
-  "homepage": "https://{luansjourney}.github.io/{luandesouza.xyz-react}",
+  "homepage": "https://luansjourney.github.io/luandesouza.xyz-react",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
