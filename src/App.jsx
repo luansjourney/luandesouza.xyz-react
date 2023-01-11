@@ -4,12 +4,12 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 //#endregion
 //#region library imports
-import { Routes , Route, BrowserRouter} from "react-router-dom";
+import { Routes , Route, HashRouter} from "react-router-dom";
 //#endregion
 
 function App() {
   return(
-    <BrowserRouter basename='/'>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route path="/" exact element={<Home />}>
@@ -18,7 +18,7 @@ function App() {
           </Route>
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
